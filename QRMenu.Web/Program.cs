@@ -143,7 +143,7 @@ app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 
- 
+
 
 // Global error handling
 app.UseExceptionHandler(errorApp =>
@@ -172,6 +172,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Account}/{action=Login}/{id?}");
 
- 
+
 
 app.Run();
